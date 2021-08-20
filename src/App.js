@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import OAuth from './OAuth/OAuth'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <br/>
+        <OAuth/>
+      <br/>
+      <br/>
+      <a href="https://github.com/login/oauth/authorize?scope=user:email&client_id=fd69192f249af87c0b17">Login With GitHub</a>
     </div>
   );
 }
